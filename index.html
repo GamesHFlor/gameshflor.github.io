@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="Title" content="GamesHFlor">
+  <meta name="description" content="GamesHFlor - we make indie games">
+  <meta name="keywords" content="GamesHFlor">
+  <meta name="theme-color" content="#3c4862" />
+  <title>GamesHFlor</title>
+  <link rel="stylesheet" type="text/css", href="themes/css/style.css" />
+  <script src="js/main.js"></script>
+  <link rel = "icon" href = "themes/img/GamesHFlor-Icon.png">
+  <meta property="og:image" content="themes/img/GamesHFlor-ShareLogo.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="512">
+  <meta property="og:image:height" content="512">
+</head>
+<body class="noselect">
+  <header class="nodisplay">
+    <div class="header-mobile">
+      <div class="page-name-mobile"><span>Home</span></div>
+        <div class="nav-bar-mobile">
+          <div class="nav-bar-button-mobile" onclick="OpenNav()">
+          <hr class="nav-bar-line1">
+          <hr class="nav-bar-line2">
+          <hr class="nav-bar-line3">
+          <hr class="nav-bar-line4">
+        </div>
+      </div>
+    </div>
+    <nav id="navigation">
+      <ul>
+        <li><a onclick="CloseNav()"><span class="nav-name hover">Ho<br>me</span></a><hr class="nav-bar-line1"></li>
+        <li><a href="games/"><span class="nav-name">Ga<br>mes</span></a><hr class="nav-bar-line2"></li>
+        <li><a href="about-us/"><span class="nav-name">Abo<br>ut Us</span></a><hr class="nav-bar-line3"></li>
+        <li><a href="contact/"><span class="nav-name">Con<br>tact</span></a><hr class="nav-bar-line4"></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="sidebar">
+    <div class="sidenav">
+      <Ul>
+        <li><img src="themes/img/GamesHFlor-NavCubeY.png" alt="+" draggable="false"/></li>
+        <li><img src="themes/img/GamesHFlor-NavCube.png" alt="-" draggable="false"/></li>
+        <li><img src="themes/img/GamesHFlor-NavCube.png" alt="-" draggable="false"/></li>
+        <li><img src="themes/img/GamesHFlor-NavCube.png" alt="-" draggable="false"/></li>
+      </Ul>
+    </div>
+    <div class="sidelogo">
+      <img src="themes/img/GamesHFlor-SideLogo.png" alt="GamesHFlor" draggable="false"/>
+    </div>
+  </div>
+  <div class="content">
+    <div id="nav-gamepad">
+      <div>
+        <img src="themes/img/GamesHFlor-NavGamepad.png" alt="GamesHFlor" usemap="#gamepad-buttons" hidefocus="true" draggable="false">
+        <map name="gamepad-buttons">
+          <area shape="rect" coords="314, 106, 341, 133" href="games/" alt="" class="gamepad-button" onmouseover="OnMouseOverGamepadButton(2)" onmouseout="OnMouseOutGamepadButton(2)">
+          <area shape="rect" coords="349, 141, 376, 168" href="about-us/" alt="" class="gamepad-button" onmouseover="OnMouseOverGamepadButton(3)" onmouseout="OnMouseOutGamepadButton(3)">
+          <area shape="rect" coords="384, 106, 411, 133" href="contact/" alt="" class="gamepad-button" onmouseover="OnMouseOverGamepadButton(4)" onmouseout="OnMouseOutGamepadButton(4)">
+        </map>
+        <a class="gamepad-text hover" id="gamepad-button-1">Ho<br>me</a>
+        <a class="gamepad-text" id="gamepad-button-2" href="games/">Ga<br>mes</a>
+        <a class="gamepad-text" id="gamepad-button-3" href="about-us/">Abo<br>ut Us</a>
+        <a class="gamepad-text" id="gamepad-button-4" href="contact/">Con<br>tact</a>
+      </div>
+    </div>
+    <div id="ghf-home-parent">
+      <div id="ghf-home">
+        <img id="promo" src="themes/img/GamesHFlor-Promo.png" alt="" draggable="false">
+        <div id="ghf-app-button" class="app-button">
+          <a target=”_blank” href="https://play.google.com/store/apps/dev?id=7185449575835480634" onmouseover="OnMouseOverAppButton()" onmouseout="OnMouseOutAppButton()">
+            <img src="themes/img/GamesHFlor-AppButton.png" alt="" draggable="false">
+            <div class="app-button-text">
+              <span class="app-button-inner-text" id="getiton">Get It On</span>
+              <span class="app-button-inner-text" id="googleplay">GOOGLE PLAY</span>
+            </div>
+          </a>
+       </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="footer-content">
+      <div>
+        <span class="copyright">Copyright © 2018-<script>document.write(new Date().getFullYear());</script> GamesHFlor</span>
+        <img class="footerlogo" src="themes/img/GamesHFlor-Logo.png" alt="GamesHFlor" draggable="false"/>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

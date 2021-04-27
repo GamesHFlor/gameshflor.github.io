@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="Title" content="2048 Fusion | GamesHFlor">
+  <meta name="keywords" content="GamesHFlor">
+  <meta name="theme-color" content="#3c4862" />
+  <title>2048 Fusion | GamesHFlor</title>
+  <link rel="stylesheet" type="text/css", href="../../themes/css/style.css" />
+  <script src="../../js/main.js"></script>
+  <link rel = "icon" href = "../../themes/img/GamesHFlor-Icon.png">
+  <meta property="og:image" content="../../themes/img/GamesHFlor-ShareLogo.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="512">
+  <meta property="og:image:height" content="512">
+</head>
+<body class="noselect">
+  <header>
+    <div class="header-mobile nodisplay">
+      <div class="page-name-mobile"><span>Games</span></div>
+      <div class="nav-bar-mobile">
+        <div class="nav-bar-button-mobile" onclick="OpenNav()">
+          <hr class="nav-bar-line1">
+          <hr class="nav-bar-line2">
+          <hr class="nav-bar-line3">
+          <hr class="nav-bar-line4">
+        </div>
+      </div>
+    </div>
+    <nav id="navigation">
+      <ul>
+        <li><a href="../../"><span class="nav-name">Ho<br>me</span></a><hr class="nav-bar-line1 transparent"></li>
+        <li><a onclick="CloseNav()"><span class="nav-name hover">Ga<br>mes</span></a><hr class="nav-bar-line2"></li>
+        <li><a href="../../about-us/"><span class="nav-name">Abo<br>ut Us</span></a><hr class="nav-bar-line3 transparent"></li>
+        <li><a href="../../contact/"><span class="nav-name">Con<br>tact</span></a><hr class="nav-bar-line4 transparent"></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="sidebar">
+    <div class="sidenav">
+      <Ul>
+        <li><img src="../../themes/img/GamesHFlor-NavCube.png" alt="-" draggable="false"/></li>
+        <li><img src="../../themes/img/GamesHFlor-NavCubeB.png" alt="+" draggable="false"/></li>
+        <li><img src="../../themes/img/GamesHFlor-NavCube.png" alt="-" draggable="false"/></li>
+        <li><img src="../../themes/img/GamesHFlor-NavCube.png" alt="-" draggable="false"/></li>
+      </Ul>
+    </div>
+    <div class="sidelogo">
+      <img src="../../themes/img/GamesHFlor-SideLogo.png" alt="GamesHFlor" draggable="false"/>
+    </div>
+  </div>
+  <div class="content">
+        <div class="games-aboutgame">
+            <div class="games-aboutgame-inner">
+                <div class="games-logoholder">
+                    <div class="games-logo"><img src="../img/GamesHFlor-Logo-2048Fusion.png" alt="Icon" draggable="false"></div>
+                    <div class="games-logobuttonholder">        
+                        <div id="games-appbutton" class="app-button-games">
+                            <a target=”_blank” href="https://play.google.com/store/apps/details?id=com.GamesHFlor.tzfe" onmouseover="OnMouseOverGamesAppButton()" onmouseout="OnMouseOutGamesAppButton()">
+                            <img src="../../themes/img/GamesHFlor-AppButton.png" alt="" draggable="false">
+                            <div class="app-button-text-games">
+                                <span class="app-button-inner-text-games" id="getiton-games">Get It On</span>
+                                <span class="app-button-inner-text-games" id="googleplay-games">GOOGLE PLAY</span>
+                            </div>
+                            </a>
+                        </div>
+                        <div id="games-ppbutton" class="app-button-games">
+                            <a target="_blank" href="https://gameshernandezflor.wixsite.com/2048fusion-privacy" onmouseover="OnMouseOverPPButton()" onmouseout="OnMouseOutPPButton()">
+                                <img src="../../themes/img/GamesHFlor-PPButton.png" alt="" draggable="false">
+                                <div class="pp-button-text">
+                                    <span class="pp-button-inner-text" id="privacypolicy">PRIVACY POLICY</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="games-gamedescr">
+                    <img src="../../themes/img/GamesHFlor-Games-DescriprionBackground.png" draggable="false">
+                    <div class="games-gamedescr-text" id="aboutgame-tzfe">
+                        <span class="games-name">2048 Fusion</span>
+                        <div class="games-descr">
+                          <span id="description-tzfe">Swipe to move and fusion the numbers and get the 2048 tile before the empty space ends.
+                            You can even continue the game after creating the 2048 tile. Get a high score.
+                            <br>
+                            This is a perfect game to pass the time and have fun!
+                          </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="games-buttonholder">
+                    <a href="../light-blocks/"><img id="games-leftbutton" src="../../themes/img/GamesHFlor-Games-Button.png" alt="l" draggable="false"></a>
+                    <a href="../minigames/"><img id="games-rightbutton" src="../../themes/img/GamesHFlor-Games-Button.png" alt="r" draggable="false"></a>
+                </div>
+            </div>
+        </div>
+        <div class="games-navigation">
+            <Ul>
+                <li><img src="../../themes/img/GamesHFlor-NavCube.png" alt="-" draggable="false"/></li>
+                <li><img src="../../themes/img/GamesHFlor-NavCubeW.png" alt="+" draggable="false"/></li>
+                <li><img src="../../themes/img/GamesHFlor-NavCube.png" alt="-" draggable="false"/></li>
+            </Ul>
+        </div>
+  </div>
+  <footer>
+    <div class="footer-content">
+      <div>
+        <span class="copyright">Copyright © 2018-<script>document.write(new Date().getFullYear());</script> GamesHFlor</span>
+        <img class="footerlogo" src="../../themes/img/GamesHFlor-Logo.png" alt="GamesHFlor" draggable="false"/>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
